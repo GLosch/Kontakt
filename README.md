@@ -1,2 +1,2 @@
-# contact-list
-Contact List single page app built on JQuery
+# Kontakt
+Contact List single-page app built on JQuery

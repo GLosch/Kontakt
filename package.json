@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "ISC",
   "dependencies": {
+    "director": "^1.2.8",
     "json-server": "^0.7.2"
   }
 }
