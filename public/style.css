@@ -1,6 +1,5 @@
 .ui.container{
   max-width: 960px;
-  /*position: relative;*/
   margin: 0 auto;
 }
 
@@ -21,4 +20,13 @@ h1.ui.horizontal.header.divider {
   font-family: 'Bad Script', cursive;
   color: #CC2F02;
   padding-top: 1em;
+}
+
+.ui.categories-container {
+  margin: 0 auto;
+  width: auto;
+}
+
+.ui.inverted.piled.segment {
+  margin-top: 2em;
 }
