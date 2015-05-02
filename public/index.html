@@ -7,6 +7,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
   <script src="./bower_components/semantic-ui/dist/semantic.min.js"></script>
+  <script src="https://rawgit.com/flatiron/director/master/build/director.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./bower_components/semantic-ui/dist/semantic.min.css">
   <link rel="stylesheet" href="./style.css">
@@ -19,14 +20,50 @@
     <!-- start nav -->
     <div class="ui fluid three item menu">
       <a class="blue active item"><i class="tags icon"></i>Categories</a>
-      <a class="item"><i class="write icon"></i>Add New Category</a>
+      <a class="item new-cat"><i class="write icon"></i>Add New Category</a>
       <a class="item"><i class="info icon"></i>About</a>
     </div>
     <!-- end nav -->
+
+    <div class="ui small modal">
+  <i class="close icon"></i>
+  <div class="header">
+    Add New Category
+  </div>
+  <div class="content">
+    <div class="ui small image">
+      <i class="tasks icon"></i>
+    </div>
+    <div class="description">
+      <div class="ui form">
+    <div class="inline field">
+      <label>Name</label>
+      <input type="text" placeholder="Category Name">
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui red button">
+      Cancel
+    </div>
+    <div class="ui positive right labeled icon button">
+      Save
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>
+
+    <!-- begin category blocks -->
     <div class="ui categories-container">
       <div class="ui blue inverted piled segment">
-      <h4 class="ui header">Family</h4>
-      <h5 class="ui header">27 Contacts</h5>
+        <h4 class="ui header">All Contacts</h4>
+        <h5 class="ui header">94 Contacts</h5>
+      </div>
+      <div class="ui purple inverted piled segment">
+        <h4 class="ui header">Family</h4>
+        <h5 class="ui header">27 Contacts</h5>
       </div>
       <div class="ui red inverted piled segment">
         <h4 class="ui header">Work</h4>
@@ -40,7 +77,6 @@
 
   </div>
   
-
 
 <script src="./main.js"></script>
 </body>

@@ -2,7 +2,15 @@
   "categories": [
     {
       "id": 1,
-      "name": "Friends"
+      "name": "Family"
+    },
+    {
+      "id": 2,
+      "name": "Work"
+    },
+    {
+      "id": 3,
+      "name": "College"
     }
   ],
   "contacts": [
@@ -14,6 +22,78 @@
       "phone": "312-345-5421",
       "email": "NJP3000@hotmail.com",
       "image_url": "https://pbs.twimg.com/profile_images/1314994994/twitterpic_400x400.png"
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "name": "Fritz",
+      "city": "Brooklyn",
+      "phone": "718-693-4707",
+      "email": "fritz@netscape.net",
+      "image_url": "https://a248.e.akamai.net/f/248/86/10/static.giantbomb.com/uploads/scale_small/14/149200/2357003-mikhail_gorbachev.jpg"
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "name": "Jeff",
+      "city": "Westchester",
+      "phone": "212-239-9952",
+      "email": "jeff@comcast.net",
+      "image_url": "http://vignette4.wikia.nocookie.net/yogibear/images/8/85/Cartoons_Yogi_Bear.jpg/revision/latest?cb=20141019191838"
+    },
+    {
+      "id": 4,
+      "category_id": 2,
+      "name": "Val Kilmer",
+      "city": "Gotham",
+      "phone": "238-105-5513",
+      "email": "iAmBatman@wayne.org",
+      "image_url": "http://valkilmer.com/images/pics/73/val_kilmer_batman_forever_001.jpeg"
+    },
+    {
+      "id": 5,
+      "category_id": 2,
+      "name": "Adam West",
+      "city": "Wayne Manor",
+      "phone": "947-340-2098",
+      "email": "west@adamwest.com",
+      "image_url": "http://vignette3.wikia.nocookie.net/batman/images/1/1b/Batman_'66_-_Adam_West_as_Batman.jpg/revision/latest?cb=20140721204147"
+    },
+    {
+      "id": 6,
+      "category_id": 2,
+      "name": "Wesley Snipes",
+      "city": "Los Angeles",
+      "phone": "972-304-1940",
+      "email": "snipes@netscape.net",
+      "image_url": "http://www.nndb.com/people/318/000025243/snipes1.jpg"
+    },
+    {
+      "id": 7,
+      "category_id": 3,
+      "name": "Dustin Diamond",
+      "city": "An empty parking lot",
+      "phone": "340-084-2398",
+      "email": "screech@aol.com",
+      "image_url": "http://images.buddytv.com/articles/image/saved-by-the-bell/dustin-diamond-profile.jpg"
+    },
+    {
+      "id": 8,
+      "category_id": 3,
+      "name": "Bill Cosby",
+      "city": "Broken Childhood, IL",
+      "phone": "606-591-2398",
+      "email": "bill@yahoo.com",
+      "image_url": "http://cdn-www.i-am-bored.com/media/thumbnails/cosby2[1].jpg"
+    },
+    {
+      "id": 9,
+      "category_id": 3,
+      "name": "Corey Feldman",
+      "city": "Everywhere and Nowhere",
+      "phone": "387-208-5098",
+      "email": "corey@feldman.gov",
+      "image_url": "https://a248.e.akamai.net/f/1202/1579/4m/i.dailymail.co.uk/i/pix/2012/01/07/article-2083484-0F5D923A00000578-585_233x358.jpg"
     }
   ]
 }
