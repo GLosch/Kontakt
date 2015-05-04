@@ -30,3 +30,15 @@ h1.ui.horizontal.header.divider {
 .ui.inverted.piled.segment {
   margin-top: 2em;
 }
+
+.category-block:hover {
+  opacity: .5;
+}
+
+.ui.cards {
+  display: inline-block;
+}
+
+.ui.cards>.card>.image>img {
+  
+}
