@@ -61,7 +61,7 @@
     {
       "id": 1,
       "category_id": 1,
-      "name": "NJP",
+      "name": "NJPatel",
       "city": "New York City",
       "phone": "312-345-5421",
       "email": "NJP3000@hotmail.com",
@@ -70,10 +70,10 @@
     {
       "id": 2,
       "category_id": 1,
-      "name": "Fritz",
-      "city": "Brooklyn",
-      "phone": "718-693-4707",
-      "email": "fritz@netscape.net",
+      "name": "Fritz Russian",
+      "city": "Stalingrad",
+      "phone": "718-693-4708",
+      "email": "fritzy@netscape.net",
       "image_url": "https://a248.e.akamai.net/f/248/86/10/static.giantbomb.com/uploads/scale_small/14/149200/2357003-mikhail_gorbachev.jpg"
     },
     {
