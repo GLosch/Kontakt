@@ -6,7 +6,7 @@ var $allCatsButton = $(".ui.fluid.three.item.menu").children(".all-cats").first(
 var $aboutLink = $(".ui.fluid.three.item.menu").children(".about").last();
 
 //Mustache template for Cards
-var $personCard = "<div class='ui cards'>{{#person}}<div data-id='{{id}}' class='card'><a class='image'><img src='{{image}}'></a><div class='content'><p data-type='name' class='header' contenteditable='true'>{{name}}</p><div class='description'><p data-type='city' contenteditable='true'>{{city}}</p><p data-type='phone' contenteditable='true'>{{phone}}</p><p data-type='email' contenteditable='true'>{{email}}</p></div></div></div>{{/person}}</div>";
+var $personCard = "<div class='ui special cards'>{{#person}}<div data-id='{{id}}' class='card'><a class='dimmable image'><div class='ui dimmer'><div class='content'><div class='center'><div data-id='{{id}}' class='ui inverted button'>Delete</div></div></div></div><img src='{{image}}'></a><div class='content'><p data-type='name' class='header' contenteditable='true'>{{name}}</p><div class='description'><p data-type='city' contenteditable='true'>{{city}}</p><p data-type='phone' contenteditable='true'>{{phone}}</p><p data-type='email' contenteditable='true'>{{email}}</p></div></div></div>{{/person}}</div>";
 
 //get all Contacts
 function allContacts(){
@@ -53,7 +53,7 @@ function refreshCategories(){
         $container.append($allContactsBlock);
         var i = 1;
         catData.forEach(function(e){
-          var $catBlock = "<a data-id='" + e.id + "' class='category-block' href='#/categories/" + e.name + "'><div data-id='" + e.id + "' class='ui " + colors[i] + " inverted piled segment'><h4 data-id='" + e.id + "' class='ui header'>" + e.name + "</h4><h5 data-id='" + e.id + "' class='ui header'>" + "" + " Contacts</h5></div></a>";
+          var $catBlock = "<a data-id='" + e.id + "' class='category-block fadeInDown' href='#/categories/" + e.name + "'><div data-id='" + e.id + "' class='ui " + colors[i] + " inverted piled segment'><h4 data-id='" + e.id + "' class='ui header'>" + e.name + "</h4><h5 data-id='" + e.id + "' class='ui header'>" + "" + " Contacts</h5></div></a>";
           $container.append($catBlock);
           //increment through list of colors and assign the next color in the sequence to each category block
           if (i === 5){
@@ -107,7 +107,7 @@ $(document).ready(function(){
 
   //end modal//
 
-  //expand category
+  //expand category and show contacts within it
   $('.ui.categories-container').on("click", "a.category-block", function(event){
     var $targetID = ($(this).data().id);
     $container.empty();
@@ -117,6 +117,12 @@ $(document).ready(function(){
       contentType: 'application/JSON'
     }).done(function(data){
       var categoryResults = _.where(data, {category_id: $targetID});
+      $container.append("<div data-id='" + $targetID + "' class='ui green button createContact'>Add Contact</div><br>");
+      $container.on("click", ".ui.green.button", function(){
+        console.log("clicked the add button");
+        //create blank Card when Add Contact button is clicked
+        $container.append($personCard);
+      });
       if(categoryResults.length === 0){
         $container.append("<div class='ui segment'><p>There are no contacts in this category</p></div>");
       } else{
@@ -130,6 +136,10 @@ $(document).ready(function(){
           var personInfo = {id: id, image: image, name: name, city: city, phone: phone, email: email};
           var $rendered = Mustache.render($personCard, {person: personInfo});
           $container.append($rendered);
+          // $rendered.hide().appendTo($container).fadeIn(1000);
+            $('.special.cards .image').dimmer({
+              on: 'click'
+            });
         });
       }
     });
@@ -188,6 +198,26 @@ $(document).ready(function(){
       break;
     }
   });
+
+  //modal for confirming deletion of a contact Card
+  var $deleteModal = "<div class='ui basic modal'><i class='close icon'></i><div class='header'>Delete Contact?</div><div class='content'><div class='image'><i class='archive icon'></i></div><div class='description'><p>Are you sure you want to delete this contact?</p></div></div><div class='actions'><div class='two fluid ui inverted buttons'><div class='ui red basic inverted button'><i class='remove icon'></i>No</div><div class='ui green basic inverted button'><i class='checkmark icon'></i>Yes</div></div></div>";
+
+  //delete contact from Card
+  $(".ui.categories-container").on("click", ".ui.inverted.button", function(event){
+    console.log("delete button clicked");
+    var cardID = ($(event.target).data().id);
+    // $(".ui.categories-container").append($deleteModal);
+    // $(deleteModal).modal('show');
+    $.ajax({
+      url: '../contacts/' + cardID,
+      method: 'DELETE'
+    }).done(function(data){
+      console.log(data);
+      console.log("contact deleted");
+      refreshCategories();
+    });
+  });
+
 
 });
 

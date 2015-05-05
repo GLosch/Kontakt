@@ -104,15 +104,6 @@
       "image_url": "http://vignette3.wikia.nocookie.net/batman/images/1/1b/Batman_'66_-_Adam_West_as_Batman.jpg/revision/latest?cb=20140721204147"
     },
     {
-      "id": 6,
-      "category_id": 2,
-      "name": "Wesley Snipes",
-      "city": "Los Angeles",
-      "phone": "972-304-1940",
-      "email": "snipes@netscape.net",
-      "image_url": "http://www.nndb.com/people/318/000025243/snipes1.jpg"
-    },
-    {
       "id": 7,
       "category_id": 3,
       "name": "Dustin Diamond",
@@ -129,15 +120,6 @@
       "phone": "606-591-2398",
       "email": "bill@yahoo.com",
       "image_url": "http://cdn-www.i-am-bored.com/media/thumbnails/cosby2[1].jpg"
-    },
-    {
-      "id": 9,
-      "category_id": 3,
-      "name": "Corey Feldman",
-      "city": "Everywhere and Nowhere",
-      "phone": "387-208-5098",
-      "email": "corey@feldman.gov",
-      "image_url": "https://a248.e.akamai.net/f/1202/1579/4m/i.dailymail.co.uk/i/pix/2012/01/07/article-2083484-0F5D923A00000578-585_233x358.jpg"
     }
   ]
 }
