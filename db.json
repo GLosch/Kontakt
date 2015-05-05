@@ -120,6 +120,39 @@
       "phone": "606-591-2398",
       "email": "bill@yahoo.com",
       "image_url": "http://cdn-www.i-am-bored.com/media/thumbnails/cosby2[1].jpg"
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 9
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 10
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 11
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 12
     }
-  ]
+  ],
+  "<i class='add user icon'><": []
 }

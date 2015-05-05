@@ -121,7 +121,17 @@ $(document).ready(function(){
       $container.on("click", ".ui.green.button", function(){
         console.log("clicked the add button");
         //create blank Card when Add Contact button is clicked
-        $container.append($personCard);
+        $.ajax({
+          url: '../contacts',
+          method: 'POST',
+          contentType: 'application/JSON',
+          data: JSON.stringify({image: 'https://team.org/static/images/generic_avatar_300.gif', name: 'Name', city: 'City', phone: 'Phone Number', email: 'email'})
+        }).done(function(data){
+          console.log(data.id);
+          var personInfo = {image: data.image, name: data.name, city: data.city, phone: data.phone, email: data.email};
+          var rendered = Mustache.render($personCard, {person: personInfo});
+          $container.append(rendered);
+        });
       });
       if(categoryResults.length === 0){
         $container.append("<div class='ui segment'><p>There are no contacts in this category</p></div>");
