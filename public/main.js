@@ -6,7 +6,7 @@ var $allCatsButton = $(".ui.fluid.three.item.menu").children(".all-cats").first(
 var $aboutLink = $(".ui.fluid.three.item.menu").children(".about").last();
 
 //Mustache template for Cards
-var $personCard = "<div class='ui special cards'>{{#person}}<div data-id='{{id}}' class='card'><a class='dimmable image'><div class='ui dimmer'><div class='content'><div class='center'><div data-id='{{id}}' class='ui inverted button'>Delete</div></div></div></div><img src='{{image}}'></a><div class='content'><p data-type='name' class='header' contenteditable='true'>{{name}}</p><div class='description'><p data-type='city' contenteditable='true'>{{city}}</p><p data-type='phone' contenteditable='true'>{{phone}}</p><p data-type='email' contenteditable='true'>{{email}}</p></div></div></div>{{/person}}</div>";
+var $personCard = "<div class='ui special cards fadeInDown'>{{#person}}<div data-id='{{id}}' class='card'><a class='dimmable image'><div class='ui dimmer'><div class='content'><div class='center'><div data-id='{{id}}' class='ui inverted button'>Delete</div></div></div></div><img src='{{image}}'></a><div class='content'><p data-type='name' class='header' contenteditable='true'>{{name}}</p><div class='description'><p data-type='city' contenteditable='true'>{{city}}</p><p data-type='phone' contenteditable='true'>{{phone}}</p><p data-type='email' contenteditable='true'>{{email}}</p></div></div></div>{{/person}}</div>";
 
 //get all Contacts
 function allContacts(){
@@ -146,7 +146,6 @@ $(document).ready(function(){
           var personInfo = {id: id, image: image, name: name, city: city, phone: phone, email: email};
           var $rendered = Mustache.render($personCard, {person: personInfo});
           $container.append($rendered);
-          // $rendered.hide().appendTo($container).fadeIn(1000);
             $('.special.cards .image').dimmer({
               on: 'click'
             });

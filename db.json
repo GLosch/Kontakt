@@ -55,6 +55,10 @@
     {
       "name": "Still don't dupe",
       "id": 14
+    },
+    {
+      "name": "Randall",
+      "id": 15
     }
   ],
   "contacts": [
@@ -71,7 +75,7 @@
       "id": 2,
       "category_id": 1,
       "name": "Fritz Russian",
-      "city": "Stalingrad",
+      "city": "Brooklyn",
       "phone": "718-693-4708",
       "email": "fritzy@netscape.net",
       "image_url": "https://a248.e.akamai.net/f/248/86/10/static.giantbomb.com/uploads/scale_small/14/149200/2357003-mikhail_gorbachev.jpg"
@@ -113,15 +117,6 @@
       "image_url": "http://images.buddytv.com/articles/image/saved-by-the-bell/dustin-diamond-profile.jpg"
     },
     {
-      "id": 8,
-      "category_id": 3,
-      "name": "Bill Cosby",
-      "city": "Broken Childhood, IL",
-      "phone": "606-591-2398",
-      "email": "bill@yahoo.com",
-      "image_url": "http://cdn-www.i-am-bored.com/media/thumbnails/cosby2[1].jpg"
-    },
-    {
       "image": "https://team.org/static/images/generic_avatar_300.gif",
       "name": "Name",
       "city": "City",
@@ -152,6 +147,78 @@
       "phone": "Phone Number",
       "email": "email",
       "id": 12
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 13
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 14
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 15
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 16
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 17
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 18
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 19
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 20
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 21
     }
   ],
   "<i class='add user icon'><": []
