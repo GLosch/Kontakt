@@ -219,6 +219,14 @@
       "phone": "Phone Number",
       "email": "email",
       "id": 21
+    },
+    {
+      "image": "https://team.org/static/images/generic_avatar_300.gif",
+      "name": "Name",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "email",
+      "id": 22
     }
   ],
   "<i class='add user icon'><": []
