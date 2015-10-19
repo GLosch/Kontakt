@@ -2,8 +2,7 @@
 Contact List single-page app
 
 ## Technologies
-> - Express.js
-> - Node.js
+> - JavaScript
 > - JQuery
 > - Mustache templating engine
 > - Semantic-UI
